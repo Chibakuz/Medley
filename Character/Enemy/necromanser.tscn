@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0mjt5g4dxd4i"]
+
+[ext_resource type="Texture2D" uid="uid://dbxbe66yvpjoa" path="res://Art/Legacy-Fantasy - High Forest 2.3/Monster/NEcromancer/Idle.png" id="1_byqo4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rngvk"]
+size = Vector2(40, 76.875)
+
+[node name="Necromanser" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(74, 131.5)
+scale = Vector2(1.75309, 2.09649)
+texture = ExtResource("1_byqo4")
+hframes = 13
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(67, 131)
+shape = SubResource("RectangleShape2D_rngvk")

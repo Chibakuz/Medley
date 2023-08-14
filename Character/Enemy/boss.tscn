@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ptx0n52p8hi0"]
+
+[ext_resource type="Texture2D" uid="uid://bnv1yji08fpvt" path="res://Art/Legacy-Fantasy - High Forest 2.3/Monster/darkfantasyknight/knight/idle/Knight_idle_00001.png" id="1_bshy0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qgdcy"]
+size = Vector2(138.5, 224)
+
+[node name="Boss" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(592.75, 176.75)
+scale = Vector2(0.476953, 0.428472)
+texture = ExtResource("1_bshy0")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(725, 176)
+shape = SubResource("RectangleShape2D_qgdcy")
